@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Food Sharing Management",
+    "description": "A full-stack web application where users can donate surplus food or request donations. The platform includes role-based dashboards for donors, receivers, and admins.",
+    "features": [
+      "Role-based dashboards (admin, donor, receiver)",
+      "Food posting with status updates and expiration",
+      "Donation request system & approval handling"
+    ],
+    "technologies": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    "liveLink": "https://food-sharing-auth-9235a.web.app",
+    "githubLink": "https://github.com/Badhonshahrier/food_sharing_web",
+    "detailsRoute": "/project/1",
+    "image": "/src/assets/Screenshot_11.png"
+  },
+  {
+    "id": 2,
+    "title": "Garden Tips Share",
+    "description": "A community blog and forum for garden lovers to share tips, comment, and explore curated content. Includes a blog posting system with authentication and category filters.",
+    "features": [
+      "User authentication and profile management",
+      "Post garden tips, edit/delete your posts",
+      "Category-based filtering and search"
+    ],
+    "technologies": ["React", "Firebase", "Tailwind CSS"],
+    "liveLink": "https://gardening-authentication-a8520.web.app",
+    "githubLink": "https://github.com/Badhonshahrier/gardening_web_client",
+    "detailsRoute": "/project/2",
+    "image": "/src/assets/Screenshot_12.png"
+  },
+  {
+    "id": 3,
+    "title": "Appstore",
+    "description": "An online mobile app showcase platform where developers can upload apps, users can explore, and admins can manage submissions. Modern UI with Bootstrap styling.",
+    "features": [
+      "Developer and admin login",
+      "Upload and categorize apps with screenshots",
+      "Admin panel for approving/rejecting apps"
+    ],
+    "technologies": ["React", "Express.js", "MongoDB", "Bootstrap"],
+    "liveLink": "https://sweet-sundae-daf000.netlify.app",
+    "githubLink": "https://github.com/Badhonshahrier/app_store_web",
+    "detailsRoute": "/project/3",
+    "image": "/src/assets/Screenshot_28.png"
+  }
+]
