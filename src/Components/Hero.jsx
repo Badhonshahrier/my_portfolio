@@ -13,7 +13,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r rounded-4xl from-blue-100 via-white to-blue-50 py-12 lg:py-24 my-14">
+    <section className="bg-gradient-to-r  from-blue-100 via-white to-blue-50 rounded-4xl py-12 lg:py-24 my-14">
       <div className="max-w-7xl lg:ml-20 mx-auto px-4 flex flex-col-reverse items-center lg:flex-row lg:justify-between gap-10">
         
         {/* LEFT SIDE - Info */}

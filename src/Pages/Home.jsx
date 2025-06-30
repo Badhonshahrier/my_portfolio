@@ -6,6 +6,7 @@ import Education from '../Components/Education';
 
 import { useLoaderData } from 'react-router';
 import Project from '../Components/Project';
+import Contact from '../Components/Contact';
 
 const Home = () => {
     const projectData=useLoaderData()
@@ -16,6 +17,7 @@ const Home = () => {
             <SkillBar></SkillBar>
             <Education></Education>
             <Project projectData={projectData}></Project>
+            <Contact></Contact>
            
         </div>
     );

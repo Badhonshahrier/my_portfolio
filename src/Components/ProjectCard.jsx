@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 const ProjectCard = ({ project }) => {
-  console.log(project);
+
 
   return (
     <section className=" px-4">
@@ -39,24 +39,9 @@ const ProjectCard = ({ project }) => {
                 ))}
               </div>
               <div className="flex gap-3">
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel=""
-                  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm"
-                >
-                  Live
-                </a>
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-md text-sm"
-                >
-                  GitHub
-                </a>
+                
                 <Link
-                  to=""
+                  to={`/details/${project.id}`}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm"
                 >
                   Details

@@ -2,7 +2,10 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Main_Layout from "../Layouts/Main_Layout";
 import Home from "../Pages/Home";
 import About from "../Components/About";
-import Project from "../Components/Project";
+import ProjectDetails from "../Components/ProjectDetails";
+import Contact from "../Components/Contact";
+import SkillsBar from "../Components/SkillBar";
+import ProjectCard from "../Components/ProjectCard";
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +15,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
-        loader:()=>fetch("project.json")
+        loader:()=>fetch("./project.json")
       },
       {
         path:"/about",
@@ -20,9 +23,22 @@ export const router = createBrowserRouter([
       },
       {
         path:"/project",
-        Component:Project,
+        Component:ProjectCard,
         
+      },
+      {
+        path:"/details/:id",
+        Component:ProjectDetails,
+        loader:()=>fetch("./project.json")
+      },
+      {
+        path:"/contact",
+        Component:Contact
+      },{
+        path:"/skills",
+        Component:SkillsBar
       }
     ],
+    
   },
 ]);

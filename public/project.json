@@ -2,46 +2,82 @@
   {
     "id": 1,
     "title": "Food Sharing Management",
-    "description": "A full-stack web application where users can donate surplus food or request donations. The platform includes role-based dashboards for donors, receivers, and admins.",
+    "mainTech": "React, Node.js, MongoDB",
+    "description": "A full-stack donation platform allowing users to donate surplus food or request donations through a role-based dashboard system.",
     "features": [
       "Role-based dashboards (admin, donor, receiver)",
-      "Food posting with status updates and expiration",
-      "Donation request system & approval handling"
+      "Food posting with status updates, images, and expiration",
+      "Donation request system & approval/rejection handling",
+      "Admin tools to monitor and manage users and donations"
+    ],
+    "challenges": [
+      "Implementing secure role-based access control",
+      "Managing real-time updates of donation statuses",
+      "Handling authentication and maintaining user sessions"
+    ],
+    "futurePlans": [
+      "Add real-time chat between donors and receivers",
+      "Integrate push/email notifications for activity alerts",
+      "Mobile-responsive PWA version for easier usage"
     ],
     "technologies": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     "liveLink": "https://food-sharing-auth-9235a.web.app",
     "githubLink": "https://github.com/Badhonshahrier/food_sharing_web",
     "detailsRoute": "/project/1",
-    "image": "/src/assets/Screenshot_11.png"
+    "image": "https://i.ibb.co/k6rqXKMm/Screenshot-11.png"
   },
   {
     "id": 2,
     "title": "Garden Tips Share",
-    "description": "A community blog and forum for garden lovers to share tips, comment, and explore curated content. Includes a blog posting system with authentication and category filters.",
+    "mainTech": "React, Firebase",
+    "description": "A blog forum where gardening enthusiasts can post, interact, and explore tips in various categories. Built with a strong focus on user-friendly content sharing and community interaction.",
     "features": [
-      "User authentication and profile management",
-      "Post garden tips, edit/delete your posts",
-      "Category-based filtering and search"
+      "Email/password user authentication",
+      "Create, edit, and delete your own blog posts",
+      "Category-based filtering and keyword searching",
+      "Responsive UI for all devices"
+    ],
+    "challenges": [
+      "Managing blog CRUD operations securely with Firebase Auth",
+      "Filtering posts dynamically by category and search terms",
+      "Maintaining Firebase rules for user-based data access"
+    ],
+    "futurePlans": [
+      "Add like and comment systems to enhance engagement",
+      "Implement pagination and load-on-scroll",
+      "Allow image uploads in blog posts"
     ],
     "technologies": ["React", "Firebase", "Tailwind CSS"],
     "liveLink": "https://gardening-authentication-a8520.web.app",
     "githubLink": "https://github.com/Badhonshahrier/gardening_web_client",
     "detailsRoute": "/project/2",
-    "image": "/src/assets/Screenshot_12.png"
+    "image": "https://i.ibb.co/HpnGxwXf/Screenshot-12.png"
   },
   {
     "id": 3,
     "title": "Appstore",
-    "description": "An online mobile app showcase platform where developers can upload apps, users can explore, and admins can manage submissions. Modern UI with Bootstrap styling.",
+    "mainTech": "React, Express.js, MongoDB",
+    "description": "A modern platform for developers to showcase their apps. Users can browse categorized apps, and admins can verify and manage submissions.",
     "features": [
-      "Developer and admin login",
-      "Upload and categorize apps with screenshots",
-      "Admin panel for approving/rejecting apps"
+      "Separate login for developers and admins",
+      "App upload with images, description, category, and tags",
+      "Admin panel for approving, rejecting, or removing apps",
+      "Responsive UI built using Bootstrap"
+    ],
+    "challenges": [
+      "Handling role-based access and authorization cleanly",
+      "Building a dashboard with app preview & action controls",
+      "Maintaining a streamlined review workflow for apps"
+    ],
+    "futurePlans": [
+      "Build download tracking and rating system",
+      "Enable public commenting and bookmarking",
+      "Add support for downloading APK files or external links"
     ],
     "technologies": ["React", "Express.js", "MongoDB", "Bootstrap"],
     "liveLink": "https://sweet-sundae-daf000.netlify.app",
     "githubLink": "https://github.com/Badhonshahrier/app_store_web",
     "detailsRoute": "/project/3",
-    "image": "/src/assets/Screenshot_28.png"
+    "image": "https://i.ibb.co/CswqJ317/Screenshot-10.png"
   }
 ]

@@ -9,9 +9,9 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Skills", path: "/skills" },
-    { name: "Project", path: "/project" },
+ 
     { name: "Contact", path: "/contact" },
-    { name: "Resume", path: "/resume" },
+    { name: "Resume", },
   ];
 
   const toggleMenu = () => {
