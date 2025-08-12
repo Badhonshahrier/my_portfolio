@@ -24,7 +24,7 @@ const Educationa = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen py-20 px-6 overflow-hidden">
+    <section className="relative min-h-screen  px-6 overflow-hidden">
       {/* Floating Elements */}
       <div className="relative max-w-4xl mx-auto">
         {/* Main Title */}
@@ -33,7 +33,7 @@ const Educationa = () => {
             Educational Journey
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-          <p className="text-gray-600 mt-4 text-lg">
+          <p className="text-lg text-gray-300 mt-4">
             Building expertise through academic excellence
           </p>
         </div>
@@ -51,7 +51,7 @@ const Educationa = () => {
             data-aos-delay="200"
           >
             {/* Main Card */}
-            <div className="group bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/50 hover:border-blue-200/50 transform hover:-translate-y-2">
+            <div className="group bg-white/80  p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/50 hover:border-blue-200/50 transform hover:-translate-y-2">
               {/* Card Header */}
               <div className="flex items-start justify-between">
                 <div className="flex-1">
