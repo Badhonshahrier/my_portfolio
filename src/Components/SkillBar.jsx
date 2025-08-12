@@ -1,11 +1,18 @@
-import { useState } from "react"
-import "aos/dist/aos.css"
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa"
-import { SiTailwindcss, SiMongodb, SiFigma, SiExpress } from "react-icons/si"
-import Marquee from "react-fast-marquee"
+import { useState } from "react";
+import "aos/dist/aos.css";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+} from "react-icons/fa";
+import { SiTailwindcss, SiMongodb, SiFigma, SiExpress } from "react-icons/si";
+import Marquee from "react-fast-marquee";
 
 const SkillsBar = () => {
-  const [activeCategory, setActiveCategory] = useState("all")
+  const [activeCategory, setActiveCategory] = useState("all");
 
   // Organized skill categories
   const skillCategories = {
@@ -80,16 +87,16 @@ const SkillsBar = () => {
         },
       ],
     },
-  }
+  };
 
   const getAllSkills = () => {
     return Object.values(skillCategories).flatMap((category) =>
       category.skills.map((skill) => ({
         ...skill,
         categoryTitle: category.title,
-      })),
-    )
-  }
+      }))
+    );
+  };
   const EnhancedMarquee = ({ skills }) => (
     <Marquee speed={50} gradient={false} className="py-4">
       {skills.map((skill, index) => (
@@ -99,17 +106,19 @@ const SkillsBar = () => {
               {skill.icon}
             </div>
             <span className="text-sm font-medium text-white">{skill.name}</span>
-            {skill.categoryTitle && <span className="text-xs text-gray-400 mt-1">{skill.categoryTitle}</span>}
+            {skill.categoryTitle && (
+              <span className="text-xs text-gray-400 mt-1">
+                {skill.categoryTitle}
+              </span>
+            )}
           </div>
         </div>
       ))}
     </Marquee>
-  )
+  );
 
   return (
-    <section id="" className="relative min-h-screen pt-20  overflow-hidden">
-      
-
+    <section id="" className="relative min-h-screen md:pt-10 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto ">
         {/* Enhanced Header */}
         <div className="text-center">
@@ -119,20 +128,27 @@ const SkillsBar = () => {
           >
             My Skills & Expertise
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            A comprehensive toolkit for building modern, scalable web applications
+          <p
+            className="text-lg text-gray-300 max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            A comprehensive toolkit for building modern, scalable web
+            applications
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mt-6 rounded-full" />
         </div>
-       
-{/* Skills Display */}
+
+        {/* Skills Display */}
         {activeCategory === "all" ? (
           <div>
             {/* Marquee Display for All Skills */}
             <div className="" data-aos="fade-up" data-aos-delay="600">
-              <h3 className="text-2xl font-bold mt-4 text-center text-white">Technologies I Work With</h3>
+              <h3 className="text-2xl font-bold mt-4 text-center text-white">
+                Technologies I Work With
+              </h3>
               <div className="pt-10">
-                <EnhancedMarquee  skills={getAllSkills()} />
+                <EnhancedMarquee skills={getAllSkills()} />
               </div>
             </div>
           </div>
@@ -141,8 +157,7 @@ const SkillsBar = () => {
         )}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SkillsBar
-
+export default SkillsBar;
